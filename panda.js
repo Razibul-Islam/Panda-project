@@ -33,3 +33,13 @@ document.getElementById('exampleInputEmail1').addEventListener('keyup', function
         btn.setAttribute('disabled', true)
     }
 })
+
+
+function imageChange(){
+    document.getElementById('mouseover').src = 'images/bags/bag-1.png'
+}
+
+document.getElementById('subscribe').addEventListener('dblclick', function(event){
+    // console.log(event.target);
+    event.target.style.backgroundColor = 'red';
+})
