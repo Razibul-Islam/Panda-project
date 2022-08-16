@@ -23,3 +23,13 @@ btns[i]. addEventListener("click", function (event) {
     event.target.style.display = 'none'
 });
 }
+
+document.getElementById('exampleInputEmail1').addEventListener('keyup', function(event){
+    const inputValue = event.target.value;
+    const btn = document.getElementById('Disable-Btn');
+    if(inputValue == 'email'){
+        btn.removeAttribute('disabled')
+    }else{
+        btn.setAttribute('disabled', true)
+    }
+})
